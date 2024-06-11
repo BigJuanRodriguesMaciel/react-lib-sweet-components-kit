@@ -1,17 +1,8 @@
 import React, { FC } from "react";
 import './styles.modules.scss'
+import { ButtonDefaultCustomProps } from "./types";
 
-type ComponentProps = {
-    text?: string,
-    icon?: React.ReactElement,
-    styles?: {
-        bg: `#${string}`,
-        iconBg?: `#${string}`,
-    },
-    anchorHRef?: boolean,
-}
-
-export const ButtonDefault: FC<ComponentProps> = ({styles, text, icon, anchorHRef = false, ...rest}) => {
+export const ButtonDefault: FC<ButtonDefaultCustomProps> = ({styles, text, icon, anchorHRef = false,  ...rest}) => {
     const CustomTag  = anchorHRef ? 'a' : 'button'
     return (
         <CustomTag {...anchorHRef && {href: '#'}} style={{background: styles?.bg, width: text ? "100%" : "50px"}} className='default-button  border-radius-default position-relative' {...rest}>

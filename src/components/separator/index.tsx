@@ -1,5 +1,5 @@
-import React, { FC } from "react";
+import React, { ComponentProps, FC } from "react";
 
-export const Separator: FC = () => {
-    return <span>Separator</span>
-}   
+export const Separator: FC<ComponentProps<"span">> = () => {
+    return <span className="border-radius-15 w-85 h-7 bg-green display-block"/>
+}

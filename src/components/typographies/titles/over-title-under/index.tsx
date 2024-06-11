@@ -11,8 +11,8 @@ export const OverTitleUnder: FC<IComponentProps> = ({ tag, texts, highlight }) =
     return (
         <>
             <tag.over className="font-size-14 poppins-bold">{texts.over}</tag.over>
-            <Separator />
             <tag.title className="font-size-60 fg-white poppins-bold">{generateText(texts.title, highlight.title).map((e: ReactNode) => e)}</tag.title>
+            <Separator />
             <tag.under className="font-size-42 fg-white poppins-bold">{generateText(texts.under, highlight.under).map((e: ReactNode) => e)}</tag.under>
         </>
     )
