@@ -1,0 +1,59 @@
+.container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+
+	@media (min-width: 576px) {
+		max-width: 540px;
+	}
+
+	@media (min-width: 768px) {
+		max-width: 720px;
+	}
+
+	@media (min-width: 992px) {
+		max-width: 960px;
+	}
+
+	@media (min-width: 1200px) {
+		max-width: 1140px;
+	}
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+@mixin make-col($size) {
+	flex: 0 0 percentage($size / 12);
+	max-width: percentage($size / 12);
+}
+
+@for $i from 1 through 12 {
+	.col-#{$i} {
+		@include make-col($i);
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+}
+
+@mixin make-col-responsive($prefix, $size) {
+	.#{$prefix}-col-#{$size} {
+		@include make-col($size);
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+}
+
+@each $breakpoint, $min-width in (sm: 576px, md: 768px, lg: 992px, xl: 1200px) {
+	@media (min-width: $min-width) {
+		@for $i from 1 through 12 {
+			@include make-col-responsive($breakpoint, $i);
+		}
+	}
+}

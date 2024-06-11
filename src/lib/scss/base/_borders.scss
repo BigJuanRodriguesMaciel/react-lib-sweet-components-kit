@@ -1,0 +1,12 @@
+$border-radius: (
+  'full': 100%,
+  'half': 50%,
+  'quarter': 25%,
+  'default': 50px,
+);
+
+@each $name, $value in $border-radius {
+  .border-radius-#{$name} {
+    border-radius: $value;
+  }
+}

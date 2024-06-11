@@ -1,0 +1,18 @@
+@mixin generate-size-classes($property, $prefix) {
+	@for $i from 1 through 10 {
+		.#{$prefix}-#{$i * 10} {
+			#{$property}: #{$i * 10}'%';
+		}
+	}
+}
+
+@include generate-size-classes(height, h);
+@include generate-size-classes(width, w);
+
+.h-full {
+	height: 100vh;
+}
+
+.w-full {
+	height: 100vw;
+}
