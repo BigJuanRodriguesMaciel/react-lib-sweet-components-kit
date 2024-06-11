@@ -1,8 +1,8 @@
 import React, { FC, ReactNode } from "react";
-import { IComponentProps } from "./types";
+import { IDefaultCustomProps } from "./types";
 import { Separator } from "../../../separator";
 
-export const OverTitleUnder: FC<IComponentProps> = ({ tag, texts, highlight }) => {
+export const OverTitleUnder: FC<IDefaultCustomProps> = ({ tag, texts, highlight }) => {
     const generateText = (text:string, highlightIndex:number) => {
         return text.split(' ').map((text, index) => {
             return highlightIndex === index ? <strong className="fg-black">{text}{' '}</strong> : <>{text}{' '}</>

@@ -4,7 +4,7 @@ interface IOverTitleUnder<T> {
     under: T,
 }
 
-interface IComponentProps {
+interface IDefaultCustomProps {
     colors: {
         primary: string,
         secondary: string,
@@ -16,5 +16,5 @@ interface IComponentProps {
 
 export type {
     IOverTitleUnder,
-    IComponentProps
+    IDefaultCustomProps
 }

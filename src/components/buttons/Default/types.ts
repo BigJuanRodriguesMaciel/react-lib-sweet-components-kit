@@ -1,4 +1,4 @@
-type ButtonDefaultCustomProps = {
+type DefaultCustomProps = {
     text?: string,
     icon?: React.ReactElement,
     styles?: {
@@ -9,5 +9,5 @@ type ButtonDefaultCustomProps = {
 }
 
 export type {
-    ButtonDefaultCustomProps
+    DefaultCustomProps
 }
