@@ -1,7 +1,7 @@
 @mixin generate-size-classes($property, $prefix) {
-	@for $i from 1 through 200 {
+	@for $i from 1 through 500 {
 		.#{$prefix}-#{$i} {
-			#{$property}: #{$i * 1}px;
+			#{$property}: #{$i * 1}px!important;
 		}
 	}
 }

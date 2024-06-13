@@ -43,7 +43,7 @@
 }
 
 @mixin make-col-responsive($prefix, $size) {
-	.#{$prefix}-col-#{$size} {
+	.col-#{$prefix}-#{$size} {
 		@include make-col($size);
 		padding-right: 15px;
 		padding-left: 15px;

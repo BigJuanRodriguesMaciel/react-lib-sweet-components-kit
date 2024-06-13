@@ -16,4 +16,4 @@ export const OverTitleUnder: FC<IDefaultCustomProps> = ({ tag, texts, highlight 
             <tag.under className="font-size-42 fg-white poppins-bold">{generateText(texts.under, highlight.under).map((e: ReactNode) => e)}</tag.under>
         </>
     )
-}   
+}
