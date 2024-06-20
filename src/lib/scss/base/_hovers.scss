@@ -1,0 +1,11 @@
+$cursor-types: ('pointer', 'default', 'move', 'text', 'wait', 'crosshair', 'not-allowed', 'zoom-in', 'zoom-out');
+
+@mixin generate-cursor-classes {
+	@each $cursor in $cursor-types {
+		.cursor-#{$cursor} {
+			cursor: $cursor;
+		}
+	}
+}
+
+@include generate-cursor-classes;

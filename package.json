@@ -1,5 +1,5 @@
 {
-	"name": "react-lib-ecommerce-desing-system",
+	"name": "react-lib-icons-component",
 	"private": false,
 	"version": "0.1.0",
 	"type": "module",
@@ -26,6 +26,7 @@
 	"dependencies": {
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
+		"react-lib-icons-component": "https://github.com/BigJuanRodriguesMaciel/react-lib-icons-component.git",
 		"uuid": "^9.0.1",
 		"vite-plugin-dts": "^3.9.1",
 		"vite-plugin-eslint": "^1.8.1"
@@ -50,6 +51,7 @@
 		"husky": "^9.0.11",
 		"lint-staged": "^15.2.2",
 		"prettier": "^3.2.5",
+		"sass": "^1.77.4",
 		"typescript": "^5.2.2",
 		"vite": "^5.2.0"
 	}

@@ -1,0 +1,17 @@
+$colors: (
+	'blue': #5fd3fb,
+	'pink': #ed708e,
+	'green': #0e2e3b,
+	'white': #fff,
+	'black': #000,
+);
+
+@each $name, $value in $colors {
+	.bg-#{$name} {
+		background-color: $value;
+	}
+
+	.fg-#{$name} {
+		color: $value;
+	}
+}

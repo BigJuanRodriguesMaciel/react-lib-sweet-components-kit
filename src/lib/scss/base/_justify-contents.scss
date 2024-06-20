@@ -1,0 +1,14 @@
+$justify-contents: (
+	'start': flex-start,
+	'end': flex-end,
+	'center': center,
+	'space-between': space-between,
+	'space-around': space-around,
+	'space-evenly': space-evenly,
+);
+
+@each $name, $value in $justify-contents {
+	.justify-#{$name} {
+		justify-content: $value;
+	}
+}
