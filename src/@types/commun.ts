@@ -1,9 +1,8 @@
 type Enumerate<N extends number, Acc extends number[] = []> = Acc['length'] extends N
-  ? Acc[number]
-  : Enumerate<N, [...Acc, Acc['length']]>
+	? Acc[number]
+	: Enumerate<N, [...Acc, Acc['length']]>;
 
-type RangeNumbers<F extends number, T extends number> = Exclude<Enumerate<T>, Enumerate<F>>
+type RangeNumbers<F extends number, T extends number> = Exclude<Enumerate<T>, Enumerate<F>>;
+type Hexadecimal = `#${string}`;
 
-export type {
-    RangeNumbers
-}
+export type { RangeNumbers, Hexadecimal };
