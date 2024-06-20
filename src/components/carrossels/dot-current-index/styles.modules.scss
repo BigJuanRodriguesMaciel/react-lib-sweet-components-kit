@@ -1,0 +1,46 @@
+#dot-current-index {
+	display: grid;
+	height: 150px;
+	li {
+		height: 26px;
+		div {
+			height: 26px;
+			strong {
+				margin-left: 35px;
+				color: #fff;
+			}
+		}
+		span {
+			position: relative;
+			&::before {
+				content: '';
+				position: absolute;
+				width: 7px;
+				height: 7px;
+				border-radius: 100%;
+				background-color: #fff;
+				top: 12.5px;
+				left: 12.5px;
+				transform: translate(-50%, -50%);
+			}
+		}
+		&.active {
+			height: auto;
+			span {
+				&::before {
+					background-color: #000;
+				}
+				&::after {
+					content: '';
+					position: absolute;
+					width: 25px;
+					height: 25px;
+					top: 0;
+					border-radius: 100%;
+					border: 2px solid #000;
+				}
+			}
+			margin: 7px 0;
+		}
+	}
+}
