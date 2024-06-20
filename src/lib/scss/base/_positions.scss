@@ -1,13 +1,13 @@
 $positions: (
-  'static': static,
-  'relative': relative,
-  'absolute': absolute,
-  'fixed': fixed,
-  'sticky': sticky,
+	'static': static,
+	'relative': relative,
+	'absolute': absolute,
+	'fixed': fixed,
+	'sticky': sticky,
 );
 
 @each $name, $value in $positions {
-  .position-#{$name} {
-    position: $value
-  }
+	.position-#{$name} {
+		position: $value;
+	}
 }

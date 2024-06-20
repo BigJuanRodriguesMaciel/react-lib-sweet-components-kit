@@ -1,19 +1,19 @@
 @mixin generate-margin-classes {
 	@for $i from 0 through 10 {
 		.m-#{$i * 7} {
-			margin: #{$i * 7}px!important;
+			margin: #{$i * 7}px !important;
 		}
 		.mt-#{$i * 7} {
-			margin-top: #{$i * 7}px!important;
+			margin-top: #{$i * 7}px !important;
 		}
 		.mr-#{$i * 7} {
-			margin-right: #{$i * 7}px!important;
+			margin-right: #{$i * 7}px !important;
 		}
 		.mb-#{$i * 7} {
-			margin-bottom: #{$i * 7}px!important;
+			margin-bottom: #{$i * 7}px !important;
 		}
 		.ml-#{$i * 7} {
-			margin-left: #{$i * 7}px!important;
+			margin-left: #{$i * 7}px !important;
 		}
 	}
 }
@@ -21,19 +21,19 @@
 @mixin generate-padding-classes {
 	@for $i from 0 through 10 {
 		.p-#{$i * 7} {
-			padding: #{$i * 7}px!important;
+			padding: #{$i * 7}px !important;
 		}
 		.pt-#{$i * 7} {
-			padding-top: #{$i * 7}px!important;
+			padding-top: #{$i * 7}px !important;
 		}
 		.pr-#{$i * 7} {
-			padding-right: #{$i * 7}px!important;
+			padding-right: #{$i * 7}px !important;
 		}
 		.pb-#{$i * 7} {
-			padding-bottom: #{$i * 7}px!important;
+			padding-bottom: #{$i * 7}px !important;
 		}
 		.pl-#{$i * 7} {
-			padding-left: #{$i * 7}px!important;
+			padding-left: #{$i * 7}px !important;
 		}
 	}
 }

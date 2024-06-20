@@ -1,7 +1,7 @@
 @mixin generate-size-classes($property, $prefix) {
 	@for $i from 1 through 500 {
 		.#{$prefix}-#{$i} {
-			#{$property}: #{$i * 1}px!important;
+			#{$property}: #{$i * 1}px !important;
 		}
 	}
 }
@@ -14,5 +14,36 @@
 }
 
 .w-full {
-	height: 100vw;
+	width: 100vw;
+}
+
+.h-full-content {
+	height: 100%;
+}
+
+.w-full-content {
+	width: 100%;
+}
+
+.h-half {
+	height: 50vh;
+}
+
+.w-half {
+	width: 50vw;
+}
+
+.h-half-content {
+	height: 50%;
+}
+
+.w-half-content {
+	width: 50%;
+}
+.h-half-content {
+	height: 50%;
+}
+
+.w-half-content {
+	width: 50%;
 }

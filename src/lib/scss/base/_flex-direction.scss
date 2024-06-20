@@ -1,9 +1,12 @@
 $flex-direction: (
-  'row': row,'column': column,'row-reverse': row-reverse,'column-reverse': column-reverse,
+	'row': row,
+	'column': column,
+	'row-reverse': row-reverse,
+	'column-reverse': column-reverse,
 );
 
 @each $name, $value in $flex-direction {
-  .flex-direction-#{$name}{
-    flex-direction: $value
-  }
+	.flex-direction-#{$name} {
+		flex-direction: $value;
+	}
 }
