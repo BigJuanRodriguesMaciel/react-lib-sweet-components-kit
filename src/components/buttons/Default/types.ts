@@ -1,13 +1,27 @@
-type DefaultCustomProps = {
-    text?: string,
-    icon?: React.ReactElement,
-    styles?: {
-        bg: `#${string}`,
-        iconBg?: `#${string}`,
-    },
-    anchorHRef?: boolean,
-}
+import { ButtonHTMLAttributes, AnchorHTMLAttributes } from 'react';
+import { Hexadecimal } from '../../../_types/commun';
 
-export type {
-    DefaultCustomProps
-}
+type ConditionalHandleAction<T> = T extends { anchorHRef: true }
+	? AnchorHTMLAttributes<HTMLAnchorElement>
+	: ButtonHTMLAttributes<HTMLButtonElement>;
+
+type DefaultCustomProps = {
+	text?: string;
+	icon?: React.ReactElement;
+	isLeft?: boolean;
+	styles?: {
+		bg: {
+			default: Hexadecimal;
+			hover: Hexadecimal;
+		};
+		iconBg?: {
+			default: Hexadecimal;
+			hover: Hexadecimal;
+		};
+	};
+	anchorHRef?: boolean;
+} & {
+	handleAction: ConditionalHandleAction<DefaultCustomProps>;
+};
+
+export type { DefaultCustomProps };
