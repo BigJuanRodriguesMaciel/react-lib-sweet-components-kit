@@ -6,7 +6,7 @@ import { DefaultCustomProps } from './types';
 import { defaultSettings } from './const.settings';
 
 export const SportCarousel: FC<DefaultCustomProps> = ({ customSettings, children }) => {
-	const settings = customSettings || defaultSettings;
+	const settings = { ...defaultSettings, ...customSettings };
 	return (
 		<div className='slider-container'>
 			<Slider {...settings}>

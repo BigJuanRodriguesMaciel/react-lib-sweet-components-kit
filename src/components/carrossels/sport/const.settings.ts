@@ -4,7 +4,9 @@ const defaultSettings = {
 	infinite: true,
 	centerPadding: '500px',
 	slidesToShow: 1,
+	autoplay: true,
 	speed: 500,
+	autoplaySpeed: 2000,
 	responsive: [
 		{
 			breakpoint: 1500,

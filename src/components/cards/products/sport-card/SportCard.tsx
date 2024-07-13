@@ -5,7 +5,7 @@ import { Price } from '../../../price';
 import { ButtonDefault } from '../../../buttons';
 import { Chevron } from 'react-lib-icons-component';
 import './styles.modules.scss';
-import { CircledBackground } from '../circled-background';
+import { CircledBackground } from '../circle-background';
 
 export const SportCard: FC<DefaultCustomProps> = ({ assessment, image, tag, title, highlighted }) => {
 	return (
