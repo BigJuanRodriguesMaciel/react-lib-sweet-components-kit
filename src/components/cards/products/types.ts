@@ -1,12 +1,15 @@
-import { RangeNumbers } from '../../../_types/commun';
+import { RangeNumbers } from '../../../@types/commun';
 
 type DefaultCustomProps = {
+	highlighted?: string;
+	title: string;
+	tag: string;
+	assessment: RangeNumbers<0, 6>;
+	price: number;
 	image: {
-		src: string;
+		url: string;
 		alt: string;
 	};
-	productName: string;
-	assessment: RangeNumbers<0, 6>;
 };
 
 export type { DefaultCustomProps };

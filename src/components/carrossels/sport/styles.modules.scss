@@ -1,0 +1,8 @@
+#sport-carousel {
+	overflow-x: scroll;
+	width: auto;
+	cursor: pointer;
+	> div {
+		min-width: 50vw;
+	}
+}

@@ -1,5 +1,5 @@
 import { ButtonHTMLAttributes, AnchorHTMLAttributes } from 'react';
-import { Hexadecimal } from '../../../_types/commun';
+import { Hexadecimal } from '../../../@types/commun';
 
 type ConditionalHandleAction<T> = T extends { anchorHRef: true }
 	? AnchorHTMLAttributes<HTMLAnchorElement>
@@ -13,6 +13,7 @@ type DefaultCustomProps = {
 		bg: {
 			default: Hexadecimal;
 			hover: Hexadecimal;
+			border?: Hexadecimal;
 		};
 		iconBg?: {
 			default: Hexadecimal;

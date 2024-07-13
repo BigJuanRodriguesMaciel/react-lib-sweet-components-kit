@@ -109,7 +109,7 @@ export const CircleCarousel: FC<DefaultCustomProps> = ({
 
 	const component = useMemo(() => {
 		return (
-			<div className='w-full-content h-full-content circle-carousel border-radius-full position-relative'>
+			<div className='w-full-content h-full-content product-bg-circle border-radius-full position-relative'>
 				<div className='controllers border-radius-full position-absolute'>
 					{useButtons && (
 						<div className='buttons position-relative h-full-content'>
@@ -169,5 +169,5 @@ export const CircleCarousel: FC<DefaultCustomProps> = ({
 		autoplay && infiniteCarouselLoop();
 	}, [currentProductIndex]);
 
-	return isTabBrowserFocused && component;
+	return true && component;
 };
