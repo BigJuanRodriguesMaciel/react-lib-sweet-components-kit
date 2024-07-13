@@ -1,5 +1,5 @@
 @mixin generate-margin-classes {
-	@for $i from 0 through 10 {
+	@for $i from 0 through 20 {
 		.m-#{$i} {
 			margin: #{$i * 2}px;
 		}
@@ -19,7 +19,7 @@
 }
 
 @mixin generate-padding-classes {
-	@for $i from 0 through 10 {
+	@for $i from 0 through 20 {
 		.p-#{$i} {
 			padding: #{$i * 2}px;
 		}
