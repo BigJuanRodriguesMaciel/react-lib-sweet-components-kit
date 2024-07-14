@@ -4,7 +4,7 @@ import { TitleTags } from '../../../typographies/titles/title-tags';
 import { Price } from '../../../price';
 import { AssessmentStars } from '../../../assessment-stars';
 import './styles.modules.scss';
-import { Chevron } from 'react-lib-icons-component';
+import { ShopingBag } from 'react-lib-icons-component';
 import { ButtonDefault } from '../../../buttons';
 import { Discount } from 'src/components/discount';
 
@@ -26,19 +26,25 @@ export const MainClause: FC<DefaultCustomProps> = ({ tags, title, highlighted, a
 					title={title}
 					highlighted={highlighted}
 					fontSizes={{
-						title: 24,
+						title: 20,
+						tag: 14,
 					}}
 				/>
 			</div>
-			<div className='display-flex'>
-				<div>
+			<div className='display-flex mt-3 justify-space-between mb-7'>
+				<div className='mt-2'>
 					<AssessmentStars assessmentIndex={assessment} />
 				</div>
 				<Price price={'12.80'} />
 			</div>
 			<ButtonDefault
-				text={'Our production'}
-				icon={<Chevron />}
+				text={'Add to cart'}
+				icon={
+					<ShopingBag
+						stroke='fff'
+						fill='ed708e'
+					/>
+				}
 				styles={{
 					bg: {
 						default: '#fff',
