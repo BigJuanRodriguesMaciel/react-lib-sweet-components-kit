@@ -38,7 +38,7 @@ export const ButtonDefault: FC<DefaultCustomProps> = ({
 			{icon && styles?.iconBg && (
 				<i
 					style={{ background: styles?.iconBg[isHovering ? 'hover' : 'default'] }}
-					className='position-absolute border-radius-full display-flex centralize-y'>
+					className='position-absolute border-radius-full display-flex centralize'>
 					{icon}
 				</i>
 			)}

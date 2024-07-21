@@ -1,0 +1,26 @@
+.customer-reviews {
+	.img {
+		position: relative;
+		padding: 10px;
+		img {
+			width: 100px;
+		}
+		&::before {
+			content: '';
+			width: 100px;
+			height: 100px;
+			background-color: #ed708e;
+			position: absolute;
+			right: 6px;
+			bottom: 6px;
+			border-radius: 100%;
+		}
+	}
+
+	p,
+	small {
+		color: rgba(#000000, 0.6);
+		font-style: italic;
+		position: relative;
+	}
+}

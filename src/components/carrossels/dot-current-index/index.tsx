@@ -13,7 +13,7 @@ export const DotCurrentIndex: FC<DefaultCustomProps> = ({ currentIndex, quantity
 						className={index === currentIndex ? 'active' : ''}>
 						<span />
 						{index === currentIndex && (
-							<div className='display-flex centralize-y'>
+							<div className='display-flex centralize'>
 								<strong className='font-size-24 font-weight-semibold '>
 									{'0'}
 									{currentIndex + 1}

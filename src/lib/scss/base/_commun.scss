@@ -3,14 +3,24 @@
 	overflow: hidden;
 }
 
-.centralize-y {
+.centralize {
 	justify-content: center;
 	align-items: center;
 	vertical-align: middle;
 }
 
+.centralize-absolute {
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 0;
+	margin-right: 50%;
+}
+
+.overflow-visible {
+	overflow: visible;
+}
+
 .product-bg-circle {
-	background-color: #5fd3fb;
 	overflow: visible;
 	max-width: 850px;
 	max-height: 850px;
@@ -25,16 +35,22 @@
 		left: 50%;
 		top: 50%;
 		transform: translate(-50%, -50%);
+		z-index: 2;
+	}
+	img {
+		position: relative;
+		z-index: 2;
 	}
 	span {
-		width: 105%;
-		height: 105%;
-		background-color: #fff;
+		width: 110%;
+		height: 110%;
+		background-color: #5fd3fb;
+		border: 10px solid #fff;
 		position: absolute;
-		top: -2.5%;
-		left: -2.5%;
+		top: -5%;
+		left: -5%;
 		border-radius: 100%;
-		z-index: -1;
+		z-index: 1;
 	}
 	.product-expose {
 		overflow: hidden;

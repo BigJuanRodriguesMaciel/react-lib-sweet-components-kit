@@ -14,7 +14,7 @@ export const MainClause: FC<DefaultCustomProps> = ({ tags, title, highlighted, a
 			id='main-clause'
 			className='default-box-shadow border-radius-8 p-10 position-relative mt-20'>
 			<Discount discount={20} />
-			<div className='product-img display-flex centralize-y'>
+			<div className='product-img display-flex centralize'>
 				<img
 					src={image.url}
 					alt={image.alt}
