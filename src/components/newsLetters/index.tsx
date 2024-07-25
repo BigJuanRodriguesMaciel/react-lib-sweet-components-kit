@@ -1,11 +1,10 @@
 import { FC } from 'react';
-import { DefaultCustomProps } from './types';
 import './styles.modules.scss';
 import { PaperAirplane } from 'react-lib-icons-component';
 import { COLORS } from 'src/_consts';
 import { Hexadecimal } from 'src/@types/commun';
 
-export const NewsLetters: FC<DefaultCustomProps> = () => {
+export const NewsLetters: FC<any> = () => {
 	return (
 		<div
 			id='news-letters'

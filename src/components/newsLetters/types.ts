@@ -1,6 +1,3 @@
-type DefaultCustomProps = {
-	symbol?: string;
-	price: string;
-};
+type DefaultCustomProps = {};
 
 export type { DefaultCustomProps };
