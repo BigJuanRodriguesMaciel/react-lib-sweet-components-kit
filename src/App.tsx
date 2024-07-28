@@ -5,11 +5,11 @@ import { OverTitleUnder } from './components/typographies/titles/over-title-unde
 import { AssessmentStars } from './components/assessment-stars';
 import { AssessmentCard } from './components/cards/products/assessment-card';
 import exampleImage from '../public/product.png';
-import { CircleCarousel } from './components/carrossels';
+import { CircleCarousel } from './components/carrousels';
 import { COLORS } from './_consts';
-import { DotCurrentIndex } from './components/carrossels/dot-current-index';
+import { DotCurrentIndex } from './components/carrousels/dot-current-index';
 import { SportCard } from './components/cards/products/sport-card';
-import { SportCarousel } from './components/carrossels/sport';
+import { SportCarousel } from './components/carrousels/sport';
 import { SquareBackground } from './components/cards/products/square-background';
 import { MainClause } from './components/cards/products/main-clause';
 import { CustomerReviews } from './components/cards/custormer-reviews';
