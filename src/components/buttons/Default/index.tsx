@@ -31,7 +31,7 @@ export const ButtonDefault: FC<DefaultCustomProps> = ({
 	return (
 		<CustomTag
 			style={{ ...styles, ...defaultStyle }}
-			className='default-button border-radius-default position-relative poppins-bold'
+			className='default-button border-radius-default position-relative poppins-semibold display-flex centralize'
 			{...generateAttrs()}
 			{...rest}>
 			{text}

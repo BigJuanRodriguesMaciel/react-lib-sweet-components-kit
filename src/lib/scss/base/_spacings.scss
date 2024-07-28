@@ -1,19 +1,19 @@
 @mixin generate-margin-classes {
 	@for $i from 0 through 20 {
 		.m-#{$i} {
-			margin: #{$i * 2}px;
+			margin: #{$i * 2}px !important;
 		}
 		.mt-#{$i} {
-			margin-top: #{$i * 2}px;
+			margin-top: #{$i * 2}px !important;
 		}
 		.mr-#{$i} {
-			margin-right: #{$i * 2}px;
+			margin-right: #{$i * 2}px !important;
 		}
 		.mb-#{$i} {
-			margin-bottom: #{$i * 2}px;
+			margin-bottom: #{$i * 2}px !important;
 		}
 		.ml-#{$i} {
-			margin-left: #{$i * 2}px;
+			margin-left: #{$i * 2}px !important;
 		}
 	}
 }
@@ -21,19 +21,19 @@
 @mixin generate-padding-classes {
 	@for $i from 0 through 20 {
 		.p-#{$i} {
-			padding: #{$i * 2}px;
+			padding: #{$i * 2}px !important;
 		}
 		.pt-#{$i} {
-			padding-top: #{$i * 2}px;
+			padding-top: #{$i * 2}px !important;
 		}
 		.pr-#{$i} {
-			padding-right: #{$i * 2}px;
+			padding-right: #{$i * 2}px !important;
 		}
 		.pb-#{$i} {
-			padding-bottom: #{$i * 2}px;
+			padding-bottom: #{$i * 2}px !important;
 		}
 		.pl-#{$i} {
-			padding-left: #{$i * 2}px;
+			padding-left: #{$i * 2}px !important;
 		}
 	}
 }

@@ -1,10 +1,17 @@
 * {
 	line-height: 1;
 	overflow: hidden;
+	background-repeat: no-repeat !important;
+	background-size: cover;
 }
 
 .centralize {
 	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+}
+
+.centralizeY {
 	align-items: center;
 	vertical-align: middle;
 }
