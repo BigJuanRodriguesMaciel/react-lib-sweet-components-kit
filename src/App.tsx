@@ -15,6 +15,10 @@ import { MainClause } from './components/cards/products/main-clause';
 import { CustomerReviews } from './components/cards/custormer-reviews';
 import { NewsLetters } from './components/newsLetters';
 import { Pagination } from './components/pagination';
+import { CardCategoryDefault } from './components/cards/products/categories/card-category-default';
+import { CardCategoryVerticalTitle } from './components/cards/products/categories/card-category-vertical-title';
+import { CardCategoryHorizonTitle } from './components/cards/products/categories/card-category-horizon-title';
+import { ProductMosaic } from './components/cards/products/mosaic';
 export function App() {
 	const [i, setI] = useState(1);
 	const teste = {
@@ -24,10 +28,7 @@ export function App() {
 	};
 	const [currentIndex, setCurrentIndex] = useState(1);
 	return (
-		<Pagination
-			manageIndexUseStateTuple={[currentIndex, setCurrentIndex]}
-			total={20}
-		/>
+		<ProductMosaic />
 		// <SportCarousel>
 		// 	{Array.from({ length: 10 }, (v, i) => {
 		// 		return (
