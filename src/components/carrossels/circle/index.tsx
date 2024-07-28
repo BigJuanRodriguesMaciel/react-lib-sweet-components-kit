@@ -3,7 +3,7 @@ import { DefaultCustomProps } from './types';
 import './styles.modules.scss';
 import { ButtonDefault } from '../../buttons';
 import { Chevron } from 'react-lib-icons-component';
-import { AssessmentCard } from '../../cards/products/assessment-card/assessment';
+import { AssessmentCard } from '../../cards/products/assessment-card';
 import exampleImage from '../../../../public/product.png';
 import exampleImage2 from '../../../../public/product2.png';
 import { Hexadecimal, RangeNumbers } from '../../../_types/commun';
