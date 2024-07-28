@@ -34,12 +34,13 @@ export const CardCategoryHorizonTitle: FC<DefaultCustomProps> = ({
 					}
 					styles={{
 						bg: {
-							default: '#ed708e',
+							default: 'transparent',
 							hover: '#5fd3fb',
+							border: '#fff',
 						},
 						iconBg: {
-							default: '#DE5978',
-							hover: '#5fd3fb',
+							default: '#5fd3fb',
+							hover: '#fff',
 						},
 					}}
 					handleAction={() => null}
