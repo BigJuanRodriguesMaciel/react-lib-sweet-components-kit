@@ -11,7 +11,7 @@ $border-radius: (
 	}
 }
 
-@for $i from 1 through 50 {
+@for $i from 1 through 30 {
 	.border-radius-#{$i} {
 		border-radius: #{$i}px;
 	}

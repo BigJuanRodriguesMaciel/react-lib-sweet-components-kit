@@ -1,1 +1,3 @@
-export * from './Default';
+import { ButtonDefault } from './Default';
+
+export { ButtonDefault };

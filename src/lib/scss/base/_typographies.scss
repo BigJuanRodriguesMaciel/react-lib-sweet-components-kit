@@ -11,7 +11,7 @@ $font-weights: (
 	'extrabold': 800,
 	'black': 900,
 );
-$font-sizes: 14, 16, 20, 24, 28, 32, 42, 60;
+$font-sizes: 10, 12, 14, 16, 20, 22, 24, 26, 28, 32, 42, 56, 60, 72, 82, 92;
 $font-weights: (
 	'light': 300,
 	'regular': 400,
@@ -22,6 +22,19 @@ $font-weights: (
 	'black': 900,
 );
 $text-alignments: (left, center, right);
+$text-aligns: left, right, center, justify, start, end;
+
+@mixin generate-text-alignment-classes {
+	@each $alignment in $text-alignments {
+		.text-#{$alignment} {
+			text-align: $alignment;
+		}
+	}
+}
+
+@mixin text-align($value) {
+	text-align: $value;
+}
 
 @each $size in $font-sizes {
 	$rem-size: $size / 16;
@@ -50,11 +63,9 @@ $text-alignments: (left, center, right);
 	}
 }
 
-@mixin generate-text-alignment-classes {
-	@each $alignment in $text-alignments {
-		.text-#{$alignment} {
-			text-align: $alignment;
-		}
+@each $align in $text-aligns {
+	.text-#{$align} {
+		@include text-align($align);
 	}
 }
 

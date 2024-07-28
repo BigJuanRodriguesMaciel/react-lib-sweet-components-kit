@@ -16,6 +16,8 @@ export const ButtonDefault: FC<DefaultCustomProps> = ({
 		background: styles?.bg.default,
 		width: text ? '100%' : '50px',
 		transform: `rotate(${isLeft ? '-180deg' : ''})`,
+		border: `2px solid ${styles?.bg.border}`,
+		color: styles?.bg.border,
 	};
 	const [isHovering, setIsHovering] = useState(false);
 	const generateAttrs = () => {
@@ -28,15 +30,15 @@ export const ButtonDefault: FC<DefaultCustomProps> = ({
 	};
 	return (
 		<CustomTag
-			style={defaultStyle}
-			className='default-button border-radius-default position-relative'
+			style={{ ...styles, ...defaultStyle }}
+			className='default-button border-radius-default position-relative poppins-semibold display-flex centralize'
 			{...generateAttrs()}
 			{...rest}>
 			{text}
 			{icon && styles?.iconBg && (
 				<i
 					style={{ background: styles?.iconBg[isHovering ? 'hover' : 'default'] }}
-					className='position-absolute border-radius-full display-flex centralize-y'>
+					className='position-absolute border-radius-full display-flex centralize'>
 					{icon}
 				</i>
 			)}

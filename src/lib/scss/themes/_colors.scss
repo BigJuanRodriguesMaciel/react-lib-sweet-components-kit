@@ -1,9 +1,19 @@
+$blue: #5fd3fb;
+$blue--over: #43b4dc;
+$pink: #ed708e;
+$green: #0e2e3b;
+$white: #fff;
+$black: #000;
+$grey: #c0c0c0;
+
 $colors: (
-	'blue': #5fd3fb,
-	'pink': #ed708e,
-	'green': #0e2e3b,
-	'white': #fff,
-	'black': #000,
+	'blue': $blue,
+	'blue--over': $blue--over,
+	'pink': $pink,
+	'green': $green,
+	'white': $white,
+	'black': $black,
+	'grey': $grey,
 );
 
 @each $name, $value in $colors {
