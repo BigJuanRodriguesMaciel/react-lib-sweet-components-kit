@@ -1,4 +1,4 @@
-import { RangeNumbers } from 'src/@types/commun';
+import { RangeNumbers } from 'src/@types/common';
 
 type DefaultCustomProps = {
 	discount: RangeNumbers<0, 100>;

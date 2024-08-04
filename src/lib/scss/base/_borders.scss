@@ -5,9 +5,19 @@ $border-radius: (
 	'default': 50px,
 );
 
+$directions: right, left, bottom, top;
+$colors: white, gray, black;
+
 @each $name, $value in $border-radius {
 	.border-radius-#{$name} {
 		border-radius: $value;
+	}
+}
+@each $color, $colorValue in $colors {
+	@each $direction, $directionValue in $directions {
+		.border-#{$direction}-#{$color} {
+			border-#{$direction}: 1px solid #{$color};
+		}
 	}
 }
 

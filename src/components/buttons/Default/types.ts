@@ -1,5 +1,5 @@
 import { ButtonHTMLAttributes, AnchorHTMLAttributes } from 'react';
-import { Hexadecimal } from '../../../@types/commun';
+import { Hexadecimal } from '../../../@types/common';
 
 type ConditionalHandleAction<T> = T extends { anchorHRef: true }
 	? AnchorHTMLAttributes<HTMLAnchorElement>

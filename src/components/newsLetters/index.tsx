@@ -2,7 +2,7 @@ import { FC } from 'react';
 import './styles.modules.scss';
 import { PaperAirplane } from 'react-lib-icons-component';
 import { COLORS } from 'src/_consts';
-import { Hexadecimal } from 'src/@types/commun';
+import { Hexadecimal } from 'src/@types/common';
 
 export const NewsLetters: FC<any> = () => {
 	return (

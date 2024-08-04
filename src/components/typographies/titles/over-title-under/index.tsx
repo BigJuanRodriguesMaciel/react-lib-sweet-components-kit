@@ -14,7 +14,13 @@ export const OverTitleUnder: FC<IDefaultCustomProps> = ({ tag, texts, highlight 
 			<tag.title className='font-size-60 fg-white poppins-bold'>
 				{generateText(texts.title, highlight.title).map((e: ReactNode) => e)}
 			</tag.title>
-			<Separator />
+			<Separator
+				style={{
+					backgroundColor: '#0E2E3B',
+					width: '85px',
+					height: '7px',
+				}}
+			/>
 			<tag.under className='font-size-42 fg-white poppins-bold'>
 				{generateText(texts.under, highlight.under).map((e: ReactNode) => e)}
 			</tag.under>

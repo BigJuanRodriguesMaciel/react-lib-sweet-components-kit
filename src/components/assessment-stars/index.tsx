@@ -3,7 +3,7 @@ import { DefaultCustomProps } from './types';
 import { Star } from 'react-lib-icons-component';
 import './styles.modules.scss';
 import { COLORS } from '../../_consts';
-import { Hexadecimal } from 'src/@types/commun';
+import { Hexadecimal } from 'src/@types/common';
 
 export const AssessmentStars: FC<DefaultCustomProps> = ({ assessmentIndex }) => {
 	return (
