@@ -1,0 +1,19 @@
+$displays: (
+	'block': block,
+	'inline-block': inline-block,
+	'inline': inline,
+	'flex': flex,
+	'inline-flex': inline-flex,
+	'grid': grid,
+	'inline-grid': inline-grid,
+	'none': none,
+	'table': table,
+	'table-row': table-row,
+	'table-cell': table-cell,
+);
+
+@each $name, $value in $displays {
+	.display-#{$name} {
+		display: $value;
+	}
+}

@@ -1,5 +1,5 @@
 {
-	"name": "react-lib-ecommerce-desing-system",
+	"name": "react-lib-icons-component",
 	"private": false,
 	"version": "0.1.0",
 	"type": "module",
@@ -7,7 +7,7 @@
 		"dev": "vite",
 		"build": "tsc && vite build",
 		"preview": "vite preview",
-		"format": "prettier --write \"**/src/*.js\"",
+		"format": "prettier --write .",
 		"prepare": "husky install"
 	},
 	"lint-staged": {
@@ -26,6 +26,8 @@
 	"dependencies": {
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
+		"react-lib-icons-component": "https://github.com/BigJuanRodriguesMaciel/react-lib-icons-component.git",
+		"react-slick": "^0.30.2",
 		"uuid": "^9.0.1",
 		"vite-plugin-dts": "^3.9.1",
 		"vite-plugin-eslint": "^1.8.1"
@@ -35,9 +37,10 @@
 		"@commitlint/config-conventional": "^19.2.2",
 		"@types/react": "^18.2.66",
 		"@types/react-dom": "^18.2.22",
+		"@types/react-slick": "^0.23.13",
 		"@types/uuid": "^9.0.8",
 		"@typescript-eslint/eslint-plugin": "^7.8.0",
-		"@typescript-eslint/parser": "^7.8.0",
+		"@typescript-eslint/parser": "^7.13.0",
 		"@vitejs/plugin-react": "^4.2.1",
 		"eslint": "^9.2.0",
 		"eslint-config-prettier": "^9.1.0",
@@ -49,7 +52,8 @@
 		"eslint-plugin-react-refresh": "^0.4.6",
 		"husky": "^9.0.11",
 		"lint-staged": "^15.2.2",
-		"prettier": "^3.2.5",
+		"prettier": "^3.3.2",
+		"sass": "^1.77.4",
 		"typescript": "^5.2.2",
 		"vite": "^5.2.0"
 	}

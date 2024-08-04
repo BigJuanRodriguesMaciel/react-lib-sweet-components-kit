@@ -1,0 +1,22 @@
+#pagination {
+	padding: 10px 0;
+	* {
+		transition: 0.4s;
+	}
+	span {
+		color: #ed708e;
+	}
+	button {
+		border: 2px solid #ed708e;
+		color: #ed708e;
+
+		&:hover {
+			background-color: #ed708e;
+			color: #fff;
+		}
+		&.active {
+			background-color: #ed708e;
+			color: #fff;
+		}
+	}
+}

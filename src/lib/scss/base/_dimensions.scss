@@ -1,0 +1,58 @@
+@mixin generate-size-classes($property, $prefix) {
+	@for $i from 1 through 500 {
+		.#{$prefix}-#{$i} {
+			#{$property}: #{$i * 1}px !important;
+		}
+	}
+}
+
+@include generate-size-classes(height, h);
+@include generate-size-classes(width, w);
+
+.h-full {
+	height: 100vh;
+}
+
+.w-full {
+	width: 100vw;
+}
+
+.h-full-content {
+	height: 100%;
+}
+
+.w-full-content {
+	width: 100%;
+}
+
+.h-half {
+	height: 50vh;
+}
+
+.w-half {
+	width: 50vw;
+}
+
+.h-half-content {
+	height: 50%;
+}
+
+.w-half-content {
+	width: 50%;
+}
+
+.h-half-content {
+	height: 50%;
+}
+
+.w-half-content {
+	width: 50%;
+}
+
+.h-quarter-content {
+	height: 25%;
+}
+
+.w-quarter-content {
+	width: 25%;
+}

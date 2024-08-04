@@ -1,0 +1,17 @@
+#news-letters {
+	input {
+		background-color: rgba(#5fd3fb, 0.75);
+		border: none;
+		color: #fff;
+		padding-left: 20px;
+		&::placeholder {
+			color: #fff;
+		}
+	}
+	button {
+		width: 50px;
+		height: 50px;
+		background-color: #fff;
+		right: 0;
+	}
+}

@@ -1,0 +1,131 @@
+* {
+	line-height: 1;
+	overflow: hidden;
+	background-repeat: no-repeat !important;
+	background-size: cover;
+}
+
+.centralize {
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+}
+
+.centralizeY {
+	align-items: center;
+	vertical-align: middle;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.common-active {
+	color: #ed708e;
+}
+
+.centralize-absolute {
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 0;
+	margin-right: 50%;
+}
+
+.overflow-visible {
+	overflow: visible;
+}
+
+.product-bg-circle {
+	overflow: visible;
+	max-width: 850px;
+	max-height: 850px;
+	&::before {
+		position: absolute;
+		content: '';
+		width: 80%;
+		height: 80%;
+		background-color: transparent;
+		border-radius: 100%;
+		border: 3px solid #fff;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+	}
+	img {
+		position: relative;
+		z-index: 2;
+	}
+	span {
+		width: 110%;
+		height: 110%;
+		background-color: #5fd3fb;
+		border: 10px solid #fff;
+		position: absolute;
+		top: -5%;
+		left: -5%;
+		border-radius: 100%;
+		z-index: 1;
+	}
+	.product-expose {
+		overflow: hidden;
+		bottom: -70px;
+		right: 0;
+		border-bottom-right-radius: 20%;
+		img {
+			width: 900px;
+		}
+	}
+	.controllers {
+		border: 3px solid #fff;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 75%;
+		height: 75%;
+		overflow: visible;
+		.buttons {
+			z-index: 10;
+			overflow: visible;
+			.prev {
+				bottom: 10%;
+				left: 10%;
+			}
+			.next {
+				bottom: 2%;
+				left: 20%;
+			}
+		}
+	}
+	.products {
+		overflow: visible;
+		z-index: 0;
+		width: 50px;
+		right: 0;
+		.first {
+			width: 300px;
+			right: -25px;
+			top: 30%;
+			transform: translateY(-50%);
+		}
+		.second {
+			width: 300px;
+			right: -100px;
+			top: 52%;
+			transform: translateY(-50%);
+		}
+	}
+}
+
+.default-box-shadow {
+	-webkit-box-shadow: 0px 5px 10px -5px rgba(67, 180, 220, 1);
+	-moz-box-shadow: 0px 5px 10px -5px rgba(67, 180, 220, 1);
+	box-shadow: 0px 5px 10px -5px rgba(67, 180, 220, 1);
+}
+
+.slick-slide > div {
+	margin: 0 10px;
+}
+.slick-list {
+	margin: 0 -10px;
+}

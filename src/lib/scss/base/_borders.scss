@@ -1,0 +1,28 @@
+$border-radius: (
+	'full': 100%,
+	'half': 50%,
+	'quarter': 25%,
+	'default': 50px,
+);
+
+$directions: right, left, bottom, top;
+$colors: white, gray, black;
+
+@each $name, $value in $border-radius {
+	.border-radius-#{$name} {
+		border-radius: $value;
+	}
+}
+@each $color, $colorValue in $colors {
+	@each $direction, $directionValue in $directions {
+		.border-#{$direction}-#{$color} {
+			border-#{$direction}: 1px solid #{$color};
+		}
+	}
+}
+
+@for $i from 1 through 30 {
+	.border-radius-#{$i} {
+		border-radius: #{$i}px;
+	}
+}
