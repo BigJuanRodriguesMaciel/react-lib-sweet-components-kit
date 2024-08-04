@@ -23,6 +23,7 @@ $font-weights: (
 );
 $text-alignments: (left, center, right);
 $text-aligns: left, right, center, justify, start, end;
+$text-transforms: capitalize, lowercase, uppercase;
 
 @mixin generate-text-alignment-classes {
 	@each $alignment in $text-alignments {
@@ -66,6 +67,12 @@ $text-aligns: left, right, center, justify, start, end;
 @each $align in $text-aligns {
 	.text-#{$align} {
 		@include text-align($align);
+	}
+}
+
+@each $transform in $text-transforms {
+	.text-#{$transform} {
+		@include text-align($transform);
 	}
 }
 

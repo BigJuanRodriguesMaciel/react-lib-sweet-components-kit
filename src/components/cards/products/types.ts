@@ -1,4 +1,4 @@
-import { RangeNumbers } from '../../../@types/commun';
+import { RangeNumbers } from '../../../@types/common';
 
 type DefaultCustomProps = {
 	productName: string;

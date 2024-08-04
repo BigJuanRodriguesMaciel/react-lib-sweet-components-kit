@@ -19,6 +19,7 @@ import { CardCategoryDefault } from './components/cards/products/categories/card
 import { CardCategoryVerticalTitle } from './components/cards/products/categories/card-category-vertical-title';
 import { CardCategoryHorizonTitle } from './components/cards/products/categories/card-category-horizon-title';
 import { ProductMosaic } from './components/cards/products/mosaic';
+import { FullFooter } from './components/footers/full';
 export function App() {
 	const [i, setI] = useState(1);
 	const teste = {
@@ -28,7 +29,7 @@ export function App() {
 	};
 	const [currentIndex, setCurrentIndex] = useState(1);
 	return (
-		<ProductMosaic />
+		<FullFooter />
 		// <SportCarousel>
 		// 	{Array.from({ length: 10 }, (v, i) => {
 		// 		return (
