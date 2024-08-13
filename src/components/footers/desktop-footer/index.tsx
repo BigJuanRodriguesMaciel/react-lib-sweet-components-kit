@@ -52,7 +52,7 @@ const routesProductsMock = [
 	},
 ];
 
-export const FullFooter: FC<DefaultCustomProps> = ({}) => {
+export const DesktopFooter: FC<DefaultCustomProps> = ({}) => {
 	const separatorDefaultStyles = {
 		style: {
 			backgroundColor: COLORS.GREY,
