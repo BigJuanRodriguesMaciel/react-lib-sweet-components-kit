@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { AssessmentStars } from '../../../assessment-stars';
 import { Price } from '../../../price';
 import { DefaultCustomProps } from '../types';

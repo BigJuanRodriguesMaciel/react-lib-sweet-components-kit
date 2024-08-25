@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { DefaultCustomProps } from './types';
 import { Logo } from './components';
 import { Menu } from './components/menu';

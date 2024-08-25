@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { DefaultCustomProps } from './types';
 
 export const SquareBackground: FC<DefaultCustomProps> = ({ children }) => {
