@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 
 export const Logo: FC<{ logo: string | JSX.Element }> = ({ logo }) => {
 	return (

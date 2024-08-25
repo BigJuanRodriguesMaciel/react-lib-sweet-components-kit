@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 import { DefaultCustomProps } from './types';
 
 export const Menu: FC<DefaultCustomProps> = ({ routes }) => {

@@ -1,4 +1,4 @@
-import React, { AnchorHTMLAttributes, ButtonHTMLAttributes, FC, useState } from 'react';
+import { AnchorHTMLAttributes, ButtonHTMLAttributes, FC, useState } from 'react';
 import './styles.modules.scss';
 import { DefaultCustomProps } from './types';
 

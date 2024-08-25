@@ -1,4 +1,4 @@
-import React, { FC, useCallback, useEffect, useMemo, useState } from 'react';
+import { FC, useCallback, useEffect, useMemo, useState } from 'react';
 import { DefaultCustomProps } from './types';
 import './styles.modules.scss';
 import { ButtonDefault } from '../../buttons';

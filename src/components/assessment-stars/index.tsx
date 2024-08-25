@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { DefaultCustomProps } from './types';
 import { Star } from 'react-lib-icons-component';
 import './styles.modules.scss';

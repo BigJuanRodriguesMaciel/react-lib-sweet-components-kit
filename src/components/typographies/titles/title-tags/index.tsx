@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { DefaultCustomProps } from './types';
 
 export const TitleTags: FC<DefaultCustomProps> = ({ tags, title, highlighted, fontSizes = { title: 28, tag: 14 } }) => {
