@@ -3315,7 +3315,7 @@ react-is@^16.13.1:
 
 "react-lib-icons-component@https://github.com/BigJuanRodriguesMaciel/react-lib-icons-component.git":
   version "0.1.0"
-  resolved "https://github.com/BigJuanRodriguesMaciel/react-lib-icons-component.git#efec8323e9054e6fc0cec32d448fe9452e227582"
+  resolved "https://github.com/BigJuanRodriguesMaciel/react-lib-icons-component.git#eba90b2fc4426a28407ac1c6612e3eb580f0660f"
   dependencies:
     react "^18.2.0"
     react-dom "^18.2.0"

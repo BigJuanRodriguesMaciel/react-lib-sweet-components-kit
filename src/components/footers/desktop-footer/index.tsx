@@ -52,6 +52,29 @@ const routesProductsMock = [
 	},
 ];
 
+const socialMidias = [
+	{
+		icon: (
+			<Linkedin
+				fill={'#fff'}
+				height={'25px'}
+				width={'25px'}
+			/>
+		),
+		link: 'https://www.linkedin.com/company/your-company-name/',
+	},
+	{
+		icon: (
+			<Instagram
+				fill={'#fff'}
+				height={'25px'}
+				width={'25px'}
+			/>
+		),
+		link: 'https://www.linkedin.com/company/your-company-name/',
+	},
+];
+
 export const DesktopFooter: FC<DefaultCustomProps> = ({}) => {
 	const separatorDefaultStyles = {
 		style: {
@@ -83,17 +106,20 @@ export const DesktopFooter: FC<DefaultCustomProps> = ({}) => {
 					</div>
 					<div className='col-md-2'>
 						<h3 className='font-size-16 poppins-semibold text-uppercase fg-white'>Social network</h3>
-						<div className='social'>
-							{/* <Linkedin
-								fill={'#fff'}
-								height={'50px'}
-								width={'50px'}
-							/>
-							<Instagram
-								fill={'#fff'}
-								height={'50px'}
-								width={'50px'}
-							/> */}
+						<div className='social display-flex'>
+							{socialMidias.map(social => {
+								return (
+									<div
+										key={social.link}
+										className='mr-5'>
+										<a
+											href={social.link}
+											target='_blank'>
+											{social.icon}
+										</a>
+									</div>
+								);
+							})}
 						</div>
 					</div>
 				</div>

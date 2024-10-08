@@ -9,9 +9,9 @@ export const Cart: FC<DefaultCustomProps> = ({}) => {
 			id='cart'
 			className='bg-pink position-absolute p-7 pt-10'>
 			<div className='quantity border-radius-full display-flex centralize'>
-				<span className='fg-white font-size-12'>10</span>
+				<span className='fg-white font-size-16 font-weight-bold'>10</span>
 			</div>
-			<div className='display-flex centralize mt-3'>
+			<div className='display-flex centralize mt-1'>
 				<button>
 					<ShoppingBag
 						fill={'#fff'}

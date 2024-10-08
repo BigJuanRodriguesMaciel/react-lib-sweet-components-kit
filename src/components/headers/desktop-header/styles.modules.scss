@@ -1,12 +1,16 @@
-.sub-menu {
-	overflow: visible;
-	&:hover {
-		nav {
-			display: block;
+#desktop-header {
+	background: rgb(123, 210, 243);
+	background: linear-gradient(90deg, rgba(123, 210, 243, 1) -50%, rgba(86, 194, 232, 1) 100%);
+	.sub-menu {
+		overflow: visible;
+		&:hover {
+			nav {
+				display: block;
+			}
 		}
-	}
-	nav {
-		width: 200px;
-		height: 200px;
+		nav {
+			width: 200px;
+			height: 200px;
+		}
 	}
 }

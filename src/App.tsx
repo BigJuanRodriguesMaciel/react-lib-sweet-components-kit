@@ -1,4 +1,4 @@
-import { ButtonDefault } from './components';
+import { DesktopFooter } from './components';
 import { Chevron } from 'react-lib-icons-component';
 import React, { useState } from 'react';
 import { OverTitleUnder } from './components/typographies/titles/over-title-under';
@@ -20,7 +20,6 @@ import { CardCategoryVerticalTitle } from './components/cards/products/categorie
 import { CardCategoryHorizonTitle } from './components/cards/products/categories/card-category-horizon-title';
 import { ProductMosaic } from './components/cards/products/mosaic';
 import { FullFooter } from './components/footers/full';
-import { DesktopHeader } from './components/headers/desktop-header';
 export function App() {
 	const [i, setI] = useState(1);
 	const teste = {
@@ -30,8 +29,8 @@ export function App() {
 	};
 	const [currentIndex, setCurrentIndex] = useState(1);
 	return (
-		<div className='bg-grey h-full w-full'>
-			<DesktopHeader />
+		<div className='bg-white h-full w-full'>
+			<DesktopFooter />
 		</div>
 		// <SportCarousel>
 		// 	{Array.from({ length: 10 }, (v, i) => {

@@ -4,7 +4,7 @@ import { TitleTags } from '../../../typographies/titles/title-tags';
 import { Price } from '../../../price';
 import { AssessmentStars } from '../../../assessment-stars';
 import './styles.modules.scss';
-import { ShopingBag } from 'react-lib-icons-component';
+import { ShoppingBag } from 'react-lib-icons-component';
 import { ButtonDefault } from '../../../buttons';
 import { Discount } from 'src/components/discount';
 
@@ -40,9 +40,10 @@ export const MainClause: FC<DefaultCustomProps> = ({ tags, title, highlighted, a
 			<ButtonDefault
 				text={'Add to cart'}
 				icon={
-					<ShopingBag
-						stroke='fff'
-						fill='ed708e'
+					<ShoppingBag
+						fill={'#fff'}
+						height={'20px'}
+						width={'20px'}
 					/>
 				}
 				styles={{
