@@ -4,9 +4,8 @@ import { Search } from 'react-lib-icons-component';
 import { Cart } from 'src/components/cart';
 import './styles.modules.scss';
 import { HeaderNavigation } from './components/header-navigation';
-import LogoExample from '../../../../public/logo-example.png';
 
-export const DesktopHeader: FC<DefaultCustomProps> = ({}) => {
+export const DesktopHeader: FC<DefaultCustomProps> = ({ routes, logoURL, cartItemsQuantity, cartLink }) => {
 	return (
 		<div
 			id='desktop-header'
@@ -15,10 +14,10 @@ export const DesktopHeader: FC<DefaultCustomProps> = ({}) => {
 				<div className='display-flex justify-space-between'>
 					<img
 						style={{ width: '200px' }}
-						src={LogoExample}
+						src={logoURL}
 						alt=''
 					/>{' '}
-					<HeaderNavigation />
+					<HeaderNavigation routes={routes} />
 					<div className='position-relative'>
 						<div className='h-100 position-absolute display-flex centralize'>
 							<button>
@@ -30,7 +29,10 @@ export const DesktopHeader: FC<DefaultCustomProps> = ({}) => {
 							</button>
 						</div>
 						<div className='w-100 h-100'>
-							<Cart />
+							<Cart
+								cartItemsQuantity={cartItemsQuantity}
+								cartLink={cartLink}
+							/>
 						</div>
 					</div>
 				</div>

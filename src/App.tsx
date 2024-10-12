@@ -1,4 +1,4 @@
-import { DesktopFooter } from './components';
+import { DesktopFooter, DesktopHeader } from './components';
 import { Chevron } from 'react-lib-icons-component';
 import React, { useState } from 'react';
 import { OverTitleUnder } from './components/typographies/titles/over-title-under';
@@ -6,7 +6,7 @@ import { AssessmentStars } from './components/assessment-stars';
 import { AssessmentCard } from './components/cards/products/assessment-card';
 import exampleImage from '../public/product.png';
 import { CircleCarousel } from './components/carrousels';
-import { COLORS } from './_consts';
+import { COLORS } from './_const';
 import { DotCurrentIndex } from './components/carrousels/dot-current-index';
 import { SportCard } from './components/cards/products/sport-card';
 import { SportCarousel } from './components/carrousels/sport';
@@ -30,7 +30,7 @@ export function App() {
 	const [currentIndex, setCurrentIndex] = useState(1);
 	return (
 		<div className='bg-white h-full w-full'>
-			<DesktopFooter />
+			<DesktopHeader />
 		</div>
 		// <SportCarousel>
 		// 	{Array.from({ length: 10 }, (v, i) => {

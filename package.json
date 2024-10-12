@@ -27,6 +27,7 @@
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-lib-icons-component": "https://github.com/BigJuanRodriguesMaciel/react-lib-icons-component.git",
+		"react-router-dom": "^6.27.0",
 		"react-slick": "^0.30.2",
 		"uuid": "^9.0.1",
 		"vite-plugin-dts": "^3.9.1",

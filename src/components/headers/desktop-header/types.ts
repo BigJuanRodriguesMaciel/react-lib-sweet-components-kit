@@ -1,3 +1,16 @@
-type DefaultCustomProps = {};
+import { DefaultCustomProps as CartProps } from '../../cart/types';
 
-export type { DefaultCustomProps };
+type Route = {
+	link: string;
+	text: string;
+	subMenu?: SubMenu;
+};
+
+type SubMenu = Array<Route>;
+
+type DefaultCustomProps = {
+	routes: Array<Route>;
+	logoURL: string;
+} & CartProps;
+
+export type { DefaultCustomProps, Route };

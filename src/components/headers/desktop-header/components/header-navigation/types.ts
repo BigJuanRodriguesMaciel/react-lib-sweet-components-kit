@@ -1,6 +1,7 @@
+import { Route } from '../../types';
+
 type DefaultCustomProps = {
-	cartItemsQuantity: number;
-	cartLink: string;
+	routes: Array<Route>;
 };
 
 export type { DefaultCustomProps };
